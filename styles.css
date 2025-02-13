@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for the whole website */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+#searchSection {
+    margin-bottom: 30px;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#searchBar:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Event Form Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px;
+    animation-delay: .5s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #333;
+    cursor: pointer;
+}
+
+#eventForm input,
+#eventForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#eventForm textarea {
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Upcoming Event Cards */
+#upcomingEvents {
+    margin-top: 30px;
+}
+
+.event-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-card .event-details {
+    color: #777;
+}
+
+.event-card .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.event-card .btn:hover {
+    opacity: 0.8;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+}

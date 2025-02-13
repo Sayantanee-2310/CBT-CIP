@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Project</title>
+    <link rel="shortcut icon" href="png_1.jpg" type="img/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Event Manager Web</h1>
+            <button id="createEventBtn" class="btn btn-primary">+ Create Event</button>
+        </header>
+
+        <!-- Event Form Modal -->
+        <div id="eventFormModal" class="modal hidden">
+            <div class="modal-content">
+                <span id="closeBtn" class="close-btn">&times;</span>
+                <h2>Create Event</h2>
+                <form id="eventForm">
+                    <input type="text" id="eventName" placeholder="Event Name" required />
+                    <input type="datetime-local" id="eventDate" required />
+                    <input type="text" id="eventLocation" placeholder="Location" required />
+                    <textarea id="eventDescription" placeholder="Event Description" required></textarea>
+                    <button type="submit" class="btn btn-success">Create Event</button>
+                    <button type="button" id="cancelBtn" class="btn btn-danger">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <section id="searchSection">
+            <input type="text" id="searchBar" placeholder="Search Events..." />
+        </section>
+
+        <!-- Upcoming Events List -->
+        <section id="upcomingEvents">
+            <h2>Upcoming Events</h2>
+            <div id="eventCardsContainer" class="event-cards-container"></div>
+        </section>
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Event Manager. All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
